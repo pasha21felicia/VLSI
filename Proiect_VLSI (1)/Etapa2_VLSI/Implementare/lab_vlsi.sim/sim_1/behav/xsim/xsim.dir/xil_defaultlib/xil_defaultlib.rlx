@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.sim/sim_1/behav/xsim/glbl.v,1605673888,verilog,,,,glbl,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sim_1/new/top_sim.v,1619034415,verilog,,,,top_sim,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/DataPath.v,1619035824,verilog,,C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/RegisterFile.v,,DataPath,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/RegisterFile.v,1619035961,verilog,,C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/UC.v,,RegisterFile,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/UC.v,1618220872,verilog,,C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/alu.v,,UC,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/alu.v,1619034817,verilog,,C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/top.v,,ALU,,,,,,,,
+C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sources_1/new/top.v,1618224000,verilog,,C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sim_1/new/top_sim.v,,top,,,,,,,,

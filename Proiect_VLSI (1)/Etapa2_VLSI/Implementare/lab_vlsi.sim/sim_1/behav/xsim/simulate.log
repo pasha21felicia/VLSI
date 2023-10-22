@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Imparte N = 13 la D =  0
+
+Rezultat Q =  x si R =  x
+
+Imparte N =  4 la D =  2
+
+Rezultat Q =  2 si R =  0
+
+Imparte N =  7 la D =  4
+
+Rezultat Q =  1 si R =  3
+
+$stop called at time : 2 us : File "C:/Users/Pepi/Downloads/lab_vlsi.xpr (2)/lab_vlsi/lab_vlsi.srcs/sim_1/new/top_sim.v" Line 46

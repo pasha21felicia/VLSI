@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_vlsi.srcs/sources_1/new/DataPath.v" \
+"../../../../lab_vlsi.srcs/sources_1/new/RegisterFile.v" \
+"../../../../lab_vlsi.srcs/sources_1/new/UC.v" \
+"../../../../lab_vlsi.srcs/sources_1/new/alu.v" \
+"../../../../lab_vlsi.srcs/sources_1/new/top.v" \
+"../../../../lab_vlsi.srcs/sim_1/new/top_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

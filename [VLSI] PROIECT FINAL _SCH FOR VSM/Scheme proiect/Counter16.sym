@@ -1,0 +1,37 @@
+USER SYMBOL by DSCH 3.5
+DATE 16-Apr-19 12:50:49 PM
+SYM  #VSM-Counter16
+BB(0,0,40,50)
+TITLE 10 -7  #VSM-Counter16
+MODEL 6000
+REC(5,5,30,40)
+PIN(0,10,0.00,0.00)MainClock
+PIN(0,20,0.00,0.00)EnableCount
+PIN(0,30,0.00,0.00)ClearCounter
+PIN(40,10,2.00,1.00)PC[3]
+PIN(40,20,2.00,1.00)PC[2]
+PIN(40,30,2.00,1.00)PC[1]
+PIN(40,40,2.00,1.00)PC[0]
+LIG(0,10,5,10)
+LIG(0,20,5,20)
+LIG(0,30,5,30)
+LIG(35,10,40,10)
+LIG(35,20,40,20)
+LIG(35,30,40,30)
+LIG(35,40,40,40)
+LIG(5,5,5,45)
+LIG(5,5,35,5)
+LIG(35,5,35,45)
+LIG(35,45,5,45)
+VLG module VSMCounter16( MainClock,EnableCount,ClearCounter,PC[3],PC[2],PC[1],PC[0]);
+VLG  input MainClock,EnableCount,ClearCounter;
+VLG  output PC[3],PC[2],PC[1],PC[0];
+VLG  wire w4,w10,w11,w12,w13,w14;
+VLG  and #(2) and2_1(w4,EnableCount,MainClock);
+VLG  not #(2) inv_2(w10,ClearCounter);
+VLG  dreg #(3) dreg_3(PC[2],w11,w11,w10,PC[1]);
+VLG  dreg #(3) dreg_4(PC[3],w12,w12,w10,PC[2]);
+VLG  dreg #(3) dreg_5(PC[0],w13,w13,w10,w4);
+VLG  dreg #(3) dreg_6(PC[1],w14,w14,w10,PC[0]);
+VLG endmodule
+FSYM

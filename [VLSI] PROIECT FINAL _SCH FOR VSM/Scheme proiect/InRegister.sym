@@ -1,0 +1,40 @@
+USER SYMBOL by DSCH 3.5
+DATE 15-Apr-19 6:01:39 PM
+SYM  #VSM-InRegister
+BB(0,0,40,60)
+TITLE 10 -7  #VSM-InRegister
+MODEL 6000
+REC(5,5,30,50)
+PIN(0,50,0.00,0.00)DataIn[0]
+PIN(0,40,0.00,0.00)DataIn[1]
+PIN(0,30,0.00,0.00)DataIn[2]
+PIN(0,20,0.00,0.00)DataIn[3]
+PIN(0,10,0.00,0.00)EnableIn
+PIN(40,30,2.00,1.00)B1
+PIN(40,10,2.00,1.00)B3
+PIN(40,20,2.00,1.00)B2
+PIN(40,40,2.00,1.00)B0
+LIG(0,50,5,50)
+LIG(0,40,5,40)
+LIG(0,30,5,30)
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(35,30,40,30)
+LIG(35,10,40,10)
+LIG(35,20,40,20)
+LIG(35,40,40,40)
+LIG(5,5,5,55)
+LIG(5,5,35,5)
+LIG(35,5,35,55)
+LIG(35,55,5,55)
+VLG module VSMInRegister( DataIn[0],DataIn[1],DataIn[2],DataIn[3],EnableIn,B1,B3,B2,
+VLG  B0);
+VLG  input DataIn[0],DataIn[1],DataIn[2],DataIn[3],EnableIn;
+VLG  output B1,B3,B2,B0;
+VLG  wire ;
+VLG  bufif1 #(1) bufif1_1(B0,DataIn[0],EnableIn);
+VLG  bufif1 #(1) bufif1_2(B1,DataIn[1],EnableIn);
+VLG  bufif1 #(1) bufif1_3(B2,DataIn[2],EnableIn);
+VLG  bufif1 #(1) bufif1_4(B3,DataIn[3],EnableIn);
+VLG endmodule
+FSYM
